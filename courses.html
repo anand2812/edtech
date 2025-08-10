@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses – EdTech Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">EdTech Academy</div>
+        <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="enroll.html">Enroll</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Choose Your Learning Path</h1>
+        <p>Our programs are designed to help you master in‑demand skills through expert‑led instruction, hands‑on projects and career mentorship. Browse our offerings below.</p>
+    </div>
+
+    <div class="content">
+        <h2>Programs Available</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>Data Engineering</h3>
+                <p>Become a data engineer in 12 months. Learn ETL pipelines, distributed systems, data warehousing and real‑world project work.</p>
+                <div class="cta"><a href="enroll.html">Enroll</a></div>
+            </div>
+            <div class="course-card">
+                <h3>Backend & System Design</h3>
+                <p>Deepen your backend knowledge with modules on high‑performance servers, scalable architectures and design patterns for reliability.</p>
+                <div class="cta"><a href="enroll.html">Enroll</a></div>
+            </div>
+            <div class="course-card">
+                <h3>Fullstack Development</h3>
+                <p>Master frontend and backend development, build responsive interfaces and robust APIs, and deploy production‑ready applications.</p>
+                <div class="cta"><a href="enroll.html">Enroll</a></div>
+            </div>
+            <div class="course-card">
+                <h3>AI & Machine Learning</h3>
+                <p>Gain skills in supervised and unsupervised learning, build predictive models and deploy machine learning pipelines at scale.</p>
+                <div class="cta"><a href="enroll.html">Enroll</a></div>
+            </div>
+            <div class="course-card">
+                <h3>Cloud DevOps</h3>
+                <p>Learn DevOps principles, containerisation, CI/CD pipelines and infrastructure automation across AWS, Azure and GCP.</p>
+                <div class="cta"><a href="enroll.html">Enroll</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat widget reused on this page -->
+    <div class="chat-button" id="chatButton">💬</div>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">AI Course Advisor</div>
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message here…" autocomplete="off" />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

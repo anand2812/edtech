@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in a Course – EdTech Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">EdTech Academy</div>
+        <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="enroll.html">Enroll</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Join Our Learning Community</h1>
+        <p>Fill out the form below to reserve your seat. Our admissions team will reach out to confirm your enrolment and discuss next steps.</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Course Enrollment Form</h2>
+        <form id="enrollForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="course">Program of Interest</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select a program --</option>
+                <option value="data-engineering">Data Engineering</option>
+                <option value="backend-system-design">Backend & System Design</option>
+                <option value="fullstack-development">Fullstack Development</option>
+                <option value="ai-ml">AI & Machine Learning</option>
+                <option value="devops">Cloud DevOps</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Submit Enrollment</button>
+        </form>
+        <div class="success-message" id="successMessage">Thank you for enrolling! Our team will contact you shortly with next steps.</div>
+    </div>
+
+    <!-- Chat widget reused on this page -->
+    <div class="chat-button" id="chatButton">💬</div>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">AI Course Advisor</div>
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message here…" autocomplete="off" />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const enrollForm = document.getElementById('enrollForm');
+        const successMessage = document.getElementById('successMessage');
+        enrollForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            successMessage.style.display = 'block';
+            enrollForm.reset();
+        });
+    </script>
+    <script src="chat.js"></script>
+</body>
+</html>

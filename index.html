@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech Blog Article – AI‑Assisted Chat Demo</title>
+    <!-- Link shared stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Shared navigation bar -->
+    <nav class="navbar">
+        <div class="logo">EdTech Academy</div>
+        <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="enroll.html">Enroll</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section highlighting the article topic -->
+    <div class="hero">
+        <h1>Understanding Data Engineering: From Raw Data to Insight</h1>
+        <p>Discover how data engineering transforms raw information into actionable insights. Learn the skills, tools and career pathways that make data engineers indispensable in today’s analytics‑driven world.</p>
+    </div>
+
+    <!-- Main blog content -->
+    <div class="content">
+        <h2>About this article</h2>
+        <p>Welcome to our blog! Data engineering is the backbone of any modern analytics practice. It involves the collection, transformation and preparation of raw data so that analysts and data scientists can derive valuable insights. Whether you’re just curious about the field or considering a career change, mastering data engineering principles can unlock new opportunities.</p>
+        <p>In this article, you’ll learn what data engineers do, why their work is critical for businesses, and the skills you need to succeed. Our AI assistant can help you choose the right learning path based on your interests and career goals. Feel free to ask questions along the way!</p>
+        <h2>Ready to take the next step?</h2>
+        <p>Explore our curated learning paths and find a program that suits your ambitions. You can also enrol directly or speak with an advisor.</p>
+        <p>
+            <a class="btn-primary" href="courses.html">Explore Courses</a>
+            <a class="btn-primary" href="enroll.html">Enroll Now</a>
+        </p>
+    </div>
+
+    <!-- Chat widget markup; appears on every page -->
+    <div class="chat-button" id="chatButton">💬</div>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">AI Course Advisor</div>
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message here…" autocomplete="off" />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <!-- Include shared chat script -->
+    <script src="chat.js"></script>
+</body>
+</html>
